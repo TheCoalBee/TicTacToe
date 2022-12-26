@@ -26,6 +26,7 @@ p {
     grid-template: repeat(3, 75px) / repeat(3, 75px);
     gap:15px;
     padding:15px;
+    cursor:cell;
 }
 
 .game-board-cell {
@@ -35,8 +36,13 @@ p {
     align-items: center;
     font-size:64px;
     color:white;
+    font-weight:bold;
+    cursor:cell;
+    transition:all 0.1s ease;
 }
-
+.game-board-cell:hover {
+    transform: scale(1.1);
+}
 
 .play-again-btn {
     font-size:inherit;
@@ -46,8 +52,10 @@ p {
     padding:15px 25px;
     font-weight:bold;
     background-color: #E5E5CB;
-    transition: all 0.1s ease;
+    transition:all 0.1s ease;
 }
 .play-again-btn:hover {
     background-color: #D5CEA3;
+    transform: scale(1.05);
+    cursor:pointer;
 }
